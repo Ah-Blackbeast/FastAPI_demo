@@ -15,5 +15,5 @@ def price():
     return {"price": ["int", "float", "roaming"]}
 
 @app.get("/users/{user_ID}")
-def get_user(user_ID):
+def get_user(user_ID:int):
     return{"user id": user_ID}
